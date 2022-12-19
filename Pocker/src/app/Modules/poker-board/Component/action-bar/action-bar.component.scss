@@ -1,0 +1,16 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-toolbar-row{
+    height: 1em;
+  }
+
+  .board-action-bar{
+    background-color:rgb(143, 177, 136);
+    color:white; 
+    font-weight: bold;
+    border-top-left-radius:1px ;
+    border-top-right-radius:1px ;
+    height: 2em;
+  }

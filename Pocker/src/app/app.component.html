@@ -1,0 +1,17 @@
+<div 
+  gdAreas="header | content | footer"
+  gdRows="auto auto auto"
+  >
+  <div gdArea="header">
+    <app-header></app-header>
+  </div>
+  <div gdArea="content" style="padding-left: 2em;padding-right: 2em;">
+    <router-outlet></router-outlet>   
+  </div>
+  <div gdArea="footer" >
+    <mat-card style="background-color:rgb(27, 165, 165);color:white; font-weight: bold;border-radius: 0px;">
+      Footer
+    </mat-card>
+  </div>
+
+</div>

@@ -1,0 +1,14 @@
+<mat-button-toggle-group #group="matButtonToggleGroup" appearance="legacy" style="background-color:rgb(224, 196, 11) ;">
+    <mat-button-toggle value="play" aria-label="play" (change) = "onChange('play')" [disabled]="group.value === 'play'">
+        <mat-icon class="icon-display">play_arrow</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="stop" aria-label="stop" (change) = "onChange('stop')" [disabled]="group.value !== 'play'">
+        <mat-icon class="icon-display">stop</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="reset" aria-label="reset" (change) = "onChange('reset')">
+        <mat-icon class="icon-display">refresh</mat-icon>
+    </mat-button-toggle>
+</mat-button-toggle-group>
+<mat-chip color="accent">
+    <span>{{getTime()}}</span>
+</mat-chip>

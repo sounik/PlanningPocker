@@ -1,0 +1,22 @@
+
+<mat-card style="background-color:rgb(238, 243, 243);">
+    <div 
+        gdAreas="action action| content side"
+        gdGap="1em"
+        gdRows="auto auto auto"
+        style="border:2px;border-color: black;"
+        >
+            <div gdArea="action">
+                <app-action-bar></app-action-bar>
+                <app-reference></app-reference>
+            </div>
+          
+            <div gdArea="side" style="min-width: 200px;">
+                <app-joined-user></app-joined-user>
+            </div>
+            <div gdArea="content">
+                <h3>Pick a card</h3>
+                <app-suit></app-suit> 
+            </div>
+        </div>
+  </mat-card>

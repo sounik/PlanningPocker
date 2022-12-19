@@ -1,0 +1,42 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/Pocker/dist
+/Pocker/Pocker/tmp
+/Pocker/Pocker/out-tsc
+/Pocker/Pocker/bazel-out
+
+# Node
+/Pocker/node_modules
+/Pocker/npm-debug.log
+/Pocker/yarn-error.log
+
+# IDEs and editors
+/Pocker/.idea/
+/Pocker/.project
+/Pocker/.classpath
+/Pocker/.c9/
+/Pocker/*.launch
+/Pocker/.settings/
+/Pocker/*.sublime-workspace
+
+# Visual Studio Code
+/Pocker/.vscode/*
+/Pocker/!.vscode/settings.json
+/Pocker/!.vscode/tasks.json
+/Pocker/!.vscode/launch.json
+/Pocker/!.vscode/extensions.json
+/Pocker/.history/*
+
+# Miscellaneous
+/Pocker/.angular/cache
+/Pocker/.sass-cache/
+/Pocker/connect.lock
+/Pocker/coverage
+/Pocker/libpeerconnection.log
+/Pocker/testem.log
+/Pocker/typings
+
+# System files
+/Pocker/.DS_Store
+/Pocker/Thumbs.db

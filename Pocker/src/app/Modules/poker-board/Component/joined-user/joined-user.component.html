@@ -1,0 +1,9 @@
+<div class="container">
+    <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+        <mat-chip *ngFor="let user of ['100','10','1']" selected>
+            <app-user [user] = "user"></app-user>
+            <span class="spacer"></span>
+            <mat-card>{{user}}</mat-card>
+        </mat-chip>
+    </mat-chip-list>
+</div>

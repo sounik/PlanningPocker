@@ -1,0 +1,13 @@
+<div>    
+    <mat-chip color="accent" *ngIf="isLoggedIn()" >
+        <app-user [user] = "user"></app-user>
+        <button mat-icon-button class="icon logout" aria-label="Log In"
+        (click)="onLogout()">
+            <mat-icon>logout</mat-icon>
+      </button>
+    </mat-chip>
+    <button mat-icon-button class="icon" aria-label="Log In"
+    (click)="onLogin()" *ngIf="!isLoggedIn()">
+        <mat-icon>login</mat-icon>
+      </button>
+</div>
