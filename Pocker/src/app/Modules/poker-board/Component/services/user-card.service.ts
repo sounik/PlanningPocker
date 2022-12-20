@@ -10,7 +10,7 @@ export class UserCardService {
   private cardsEnabled : boolean = true ;
   constructor(private timer:TimerService) { }
 
-  onDisplayCards(value : boolean) : void{
+  onDisplayCards(value : boolean) : void {
     this.displayCards = value;
   }
 
