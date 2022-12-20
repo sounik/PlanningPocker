@@ -5,3 +5,4 @@
 /.vs/PockerBackend/v17
 /Poker.API/obj
 /Poker.API/bin
+*.user
