@@ -2,7 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/PockerBackend/v17
+/.vs/
 /Poker.API/obj
 /Poker.API/bin
 *.user

@@ -1,9 +1,10 @@
-<div class="container">
+<div class="container user-container">
     <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
-        <mat-chip *ngFor="let user of ['100','10','1']" selected>
-            <app-user [user] = "user"></app-user>
+        <mat-chip *ngFor="let user of users" selected>
+            <div class="online"></div>
+            <app-user [user] = "user.username"></app-user>
             <span class="spacer"></span>
-            <mat-card *ngIf="isCardsDisplayed()">{{user}}</mat-card>
+            <mat-card *ngIf="isCardsDisplayed()">{{user.selectedCard}}</mat-card>
             <mat-card *ngIf="!isCardsDisplayed()">X</mat-card>
         </mat-chip>
     </mat-chip-list>
