@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TimerService } from 'src/app/Shared/timer/service/timer.service';
+import { UserCardService } from '../services/user-card.service';
 
 @Component({
   selector: 'app-action-bar',
@@ -8,23 +8,18 @@ import { TimerService } from 'src/app/Shared/timer/service/timer.service';
 })
 export class ActionBarComponent {
 
-  displayCards : boolean = false;
+  constructor(private userCards:UserCardService) { }
 
-  constructor(private timer:TimerService) { }
-
-  isTimerRunning(): boolean {
-    if(this.timer.isRunning()){
-      return true;
-    }
-    return false;
+  isCardSwitchDisabled(): boolean {
+    return !this.userCards.isCardsEnabled();
   }
 
   isCardsShown():boolean{
-    return !this.isTimerRunning() && this.displayCards
+    return this.userCards.isDisplayed()
   }
   
   onShowCards(e : any){
-    this.displayCards =!!(e.checked);
+    this.userCards.onDisplayCards(!!(e.checked));
   }
 
 }

@@ -5,7 +5,7 @@
         <mat-slide-toggle 
                 [checked]="isCardsShown()"
                 (change)="onShowCards($event)"
-                [disabled] = "isTimerRunning()">
+                [disabled] = "isCardSwitchDisabled()">
         Show/Hide Cards
         </mat-slide-toggle>
         

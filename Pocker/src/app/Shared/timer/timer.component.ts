@@ -16,7 +16,7 @@ export class TimerComponent {
     return this.timer.getTime();
   }
 
-  private handleActionChange(value : string){
+  private handleActionChange(value : string) : void{
     switch(value) { 
       case 'reset': { 
         this.timer.resetTimer();

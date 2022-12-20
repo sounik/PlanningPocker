@@ -3,7 +3,8 @@
         <mat-chip *ngFor="let user of ['100','10','1']" selected>
             <app-user [user] = "user"></app-user>
             <span class="spacer"></span>
-            <mat-card>{{user}}</mat-card>
+            <mat-card *ngIf="isCardsDisplayed()">{{user}}</mat-card>
+            <mat-card *ngIf="!isCardsDisplayed()">X</mat-card>
         </mat-chip>
     </mat-chip-list>
 </div>
