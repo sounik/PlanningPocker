@@ -8,10 +8,23 @@ import { TimerService } from 'src/app/Shared/timer/service/timer.service';
 })
 export class ActionBarComponent {
 
+  displayCards : boolean = false;
+
   constructor(private timer:TimerService) { }
 
   isTimerRunning(): boolean {
-    return this.timer.isRunning();
+    if(this.timer.isRunning()){
+      return true;
+    }
+    return false;
+  }
+
+  isCardsShown():boolean{
+    return !this.isTimerRunning() && this.displayCards
+  }
+  
+  onShowCards(e : any){
+    this.displayCards =!!(e.checked);
   }
 
 }

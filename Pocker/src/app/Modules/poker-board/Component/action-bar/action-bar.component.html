@@ -2,7 +2,10 @@
         <app-timer></app-timer>
         <span class="spacer"></span>
         
-        <mat-slide-toggle [disabled] = "isTimerRunning()">
+        <mat-slide-toggle 
+                [checked]="isCardsShown()"
+                (change)="onShowCards($event)"
+                [disabled] = "isTimerRunning()">
         Show/Hide Cards
         </mat-slide-toggle>
         
