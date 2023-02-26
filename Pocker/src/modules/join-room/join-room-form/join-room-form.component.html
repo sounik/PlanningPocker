@@ -1,0 +1,7 @@
+<mat-form-field class="example-form-field" appearance="fill">
+    <mat-label>Enter a room no</mat-label>
+    <input matInput type="text" [(ngModel)]="roomNo">
+    <button *ngIf="roomNo" matSuffix mat-icon-button aria-label="Clear" (click)="roomNo=''">
+      <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>

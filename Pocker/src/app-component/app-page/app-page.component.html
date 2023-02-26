@@ -1,0 +1,13 @@
+<div 
+  gdAreas="header | content | footer"
+  gdRows="auto auto auto">
+    <div gdArea="header">
+      <ng-content select="[header]"></ng-content>
+    </div>
+    <div gdArea="content" style="padding-left: 2em;padding-right: 2em;">
+      <ng-content select="[content]"></ng-content>
+    </div>
+    <div gdArea="footer" >
+      <ng-content select="[footer]"></ng-content>
+    </div>
+</div>

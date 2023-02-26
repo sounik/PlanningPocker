@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { JoinRoomComponent } from '../../../../Shared/join-room/join-room.component';
+import { JoinRoomComponent } from '../../../../join-room/join-room.component';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
