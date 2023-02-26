@@ -44,6 +44,7 @@ import { IPublicClientApplication, PublicClientApplication } from '@azure/msal-b
 import {AppComponentModule} from '../app-component/app-component.module'
 import { ModulesModule } from 'src/modules/modules.module';
 
+
 //import 'hammerjs';
 
 // export function MSALInstancefactory(): IPublicClientApplication{
